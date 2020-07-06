@@ -2,21 +2,21 @@
 <html lang="fr">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>Accueil</title>
-	<base href="http://lockwell.000webhostapp.com/" />
+	<title>Appartement à louer - rue Lockwell - Québec</title>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
-	
+
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300" rel="stylesheet">
-	
+
 	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
 	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	
+
 	<style>
-		body { 
+		body {
 	   	background-image: url('quebecskyline2.jpg');
    		background-repeat: no-repeat;
     		background-attachment: fixed;
@@ -25,54 +25,179 @@
     		font-family: 'Work Sans', sans-serif;
     		font-size: 18pt;
 		}
-		
+
 		body>* {width: 600px; max-width:95%; margin:auto;}
-		
+
 		h1 {font-weight:200; font-size: 5em; margin: 80px 0 0;}
 		h2 {font-weight:200; font-size: 3em; margin: 0;}
 		h3 {font-weight:300; font-size: 1.5em; margin: 0;}
-		
+
 		a {color:white;}
-		
+
 		#gmap_canvas {color:#333;}
-		
-		img {max-width:100%; margin: 20px auto;}
-		
+
 		footer {font-size: 0.75em; float: right;}
-		
+
 		p.list {padding-left: 30px; text-indent: -30px;}
+	</style>
+	<style>
+	* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  padding: 2px 16px;
+  color: white;
+}
+
+
+#thumbs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.thumbnail {
+  height: 100px;
+	flex: 0 0 auto;
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.thumbnail.active,
+.thumbnail:hover {
+  opacity: 1;
+}
 	</style>
 </head>
 
 
 <body>
-	
+
 	<header>
-		<h1>6½ à louer</h1>
-		<h2>1350$ / mois</h2>
-		<h3>280 rue Lockwell, Québec</h3>		
+		<h1>7½ à louer</h1>
+		<h2>1450$ / mois</h2>
+		<h3 id="adresse">276 rue Lockwell, Québec</h3>
 	</header>
-	
+
 	<main>
-		<p><div style="max-width: 120px; float:right;"><a rel="nofollow" href="https://www.walkscore.com/score/280-rue-Lockwell-Qu%C3%A9bec?utm_source=badge&amp;utm_medium=responsive&amp;utm_campaign=badge"><!--[if lte IE 8]><img src="//pp.walk.sc/badge/walk/280-rue-Lockwell-Québec.png" style='border-radius: 0; box-shadow: none; outline: 0; color: transparent; margin: 0 0 0 2.000000%; float: left; padding: 0; width: 90%; background: none; border: 0;' alt="Walk Score of 280 Rue Lockwell Quebec QC Canada"><![endif]--> <!--[if gt IE 8]><img src="//pp.walk.sc/badge/walk/280-rue-Lockwell-Québec.svg" style='border-radius: 0; box-shadow: none; outline: 0; color: transparent; margin: 0 0 0 2.000000%; float: left; padding: 0; width: 90%; background: none; border: 0;' alt="Walk Score of 280 Rue Lockwell Quebec QC Canada"><![endif]--> <!--[if !IE]> <!-- --><img src="//pp.walk.sc/badge/walk/280-rue-Lockwell-Qu%C3%A9bec.svg" style="border-radius: 0; box-shadow: none; outline: 0; color: transparent; margin: 0 0 0 2.000000%; float: left; padding: 0; width: 90%; background: none; border: 0;" alt="Walk Score of 280 Rue Lockwell Quebec QC Canada"><!-- <![endif]--><br><!--[if lte IE 8]><img src="//pp.walk.sc/badge/bike/280-rue-Lockwell-Québec.png" style='border-radius: 0; box-shadow: none; outline: 0; color: transparent; margin: 0 0 0 2.000000%; float: left; padding: 0; width: 90%; background: none; border: 0;' alt="Bike Score of 280 Rue Lockwell Quebec QC Canada"><![endif]--><!--[if gt IE 8]><img src="//pp.walk.sc/badge/bike/280-rue-Lockwell-Québec.svg" style='border-radius: 0; box-shadow: none; outline: 0; color: transparent; margin: 0 0 0 2.000000%; float: left; padding: 0; width: 90%; background: none; border: 0;' alt="Bike Score of 280 Rue Lockwell Quebec QC Canada"><![endif]--><!--[if !IE]> <!-- --><img src="//pp.walk.sc/badge/bike/280-rue-Lockwell-Qu%C3%A9bec.svg" style="border-radius: 0; box-shadow: none; outline: 0; color: transparent; margin: 0 0 0 2.000000%; float: left; padding: 0; width: 90%; background: none; border: 0;" alt="Bike Score of 280 Rue Lockwell Quebec QC Canada"><!-- <![endif]--></a></div>Situé au coeur de la ville de Québec, un bel appartement sur deux étages comportant 3 chambres, cuisine (ayant énormément de rangement), salle à manger, salon, 2 salles de bain et une salle de lavage.</p>
-		
-		<p>Libre dès maintenant.<br>Chauffage, électricité et eau-chaude inclus.</p>
-		
-		<p>Pour plus d'informations, contactez:<br>François Laflamme<br><a data-title="flaflamm@yahoo.com" data-type="email" data-url="flaflamm@yahoo.com" href="mailto:flaflamm@yahoo.com" title="flaflamm@yahoo.com">flaflamm@yahoo.com</a><br>(418) 524-1794</p>
-		
+		<p><div style="max-width: 120px; float:right;"><a rel="nofollow" href="https://www.walkscore.com/score/276-rue-Lockwell-Qu%C3%A9bec?utm_source=badge&amp;utm_medium=responsive&amp;utm_campaign=badge"><!--[if lte IE 8]><img src="//pp.walk.sc/badge/walk/276-rue-Lockwell-Québec.png" style='border-radius: 0; box-shadow: none; outline: 0; color: transparent; margin: 0 0 0 2.000000%; float: left; padding: 0; width: 90%; background: none; border: 0;' alt="Walk Score of 276 Rue Lockwell Quebec QC Canada"><![endif]--> <!--[if gt IE 8]><img src="//pp.walk.sc/badge/walk/276-rue-Lockwell-Québec.svg" style='border-radius: 0; box-shadow: none; outline: 0; color: transparent; margin: 0 0 0 2.000000%; float: left; padding: 0; width: 90%; background: none; border: 0;' alt="Walk Score of 276 Rue Lockwell Quebec QC Canada"><![endif]--> <!--[if !IE]> <!-- --><img src="//pp.walk.sc/badge/walk/276-rue-Lockwell-Qu%C3%A9bec.svg" style="border-radius: 0; box-shadow: none; outline: 0; color: transparent; margin: 0 0 0 2.000000%; float: left; padding: 0; width: 90%; background: none; border: 0;" alt="Walk Score of 276 Rue Lockwell Quebec QC Canada"><!-- <![endif]--><br><!--[if lte IE 8]><img src="//pp.walk.sc/badge/bike/276-rue-Lockwell-Québec.png" style='border-radius: 0; box-shadow: none; outline: 0; color: transparent; margin: 0 0 0 2.000000%; float: left; padding: 0; width: 90%; background: none; border: 0;' alt="Bike Score of 276 Rue Lockwell Quebec QC Canada"><![endif]--><!--[if gt IE 8]><img src="//pp.walk.sc/badge/bike/276-rue-Lockwell-Québec.svg" style='border-radius: 0; box-shadow: none; outline: 0; color: transparent; margin: 0 0 0 2.000000%; float: left; padding: 0; width: 90%; background: none; border: 0;' alt="Bike Score of 276 Rue Lockwell Quebec QC Canada"><![endif]--><!--[if !IE]> <!-- --><img src="//pp.walk.sc/badge/bike/276-rue-Lockwell-Qu%C3%A9bec.svg" style="border-radius: 0; box-shadow: none; outline: 0; color: transparent; margin: 0 0 0 2.000000%; float: left; padding: 0; width: 90%; background: none; border: 0;" alt="Bike Score of 276 Rue Lockwell Quebec QC Canada"><!-- <![endif]--></a></div>
 
-		<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=280%20rue%20Lockwell%20qu%C3%A9bec&key=AIzaSyDwaoLUQon0AcO4KeJyUzxeyeFOxdvwAw4" allowfullscreen></iframe>
+		Situé au coeur de la ville de Québec, un bel appartement sur deux étages comportant 4 chambres, cuisine (refaite à neuf, avec beaucoup de rangement), salle à manger, salon, 2 salles de bain et une salle de lavage. Plafonds de 9 pieds ou plus.</p>
+
+		<p>Libre début août.<br>Eau-chaude incluse.</p>
+
+		<p>Pour plus d'informations, contactez:<br>François Laflamme<br><a data-title="flaflamm@yahoo.com" data-type="email" data-url="flaflamm@yahoo.com" href="mailto:flaflamm@yahoo.com" title="flaflamm@yahoo.com">flaflamm@yahoo.com</a><br>(418) 440-2351</p>
+
+		<!-- Container for the image gallery -->
+		<div class="container"  style="width:100%; background-color: rgba(20,30,40,0.6); margin-bottom:50px">
+
+  		<!-- Full-width images -->
+  		<div id="bigPictureContainer" style="width:100%; height:550px; display: flex;">
+      		<img id="bigPicture" src="276/plan.jpg" style="max-width:100%; max-height:550px; cursor:pointer; margin:auto;" onclick="openPicture()">
+  		</div>
+
+  		<!-- Next and previous buttons -->
+  		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  		<!-- Image text -->
+  		<div class="caption-container">
+    		<p id="caption">Plan de l'appartement</p>
+  		</div>
+
+  		<!-- Thumbnail images -->
+  		<div id="thumbs">
+				<img src="facade.jpg" alt="Façade 276 & 280 rue Lockwell" class="thumbnail"  onclick="currentSlide(this)">
+				<img src="276/SalleDeBain1a.jpg" alt="Salle de bain, 1er étage" class="thumbnail"  onclick="currentSlide(this)">
+				<img src="276/SalleLavage.jpg" alt="Salle de lavage, 2e étage" class="thumbnail"  onclick="currentSlide(this)">
+				<img src="276/plan.jpg" alt="Plan de l'appartement" class="thumbnail"  onclick="currentSlide(this)">
+  		</div>
+
+		</div>
+
+		<p class='list'>1<sup>er</sup> étage: Cuisine, salle à manger, salon, salle de bain et une chambre (ou bureau).</p>
+		<p class='list'>2<sup>e</sup> étage: Trois chambres, salle de bain et salle de lavage.</p>
 
 
-		<p class='list'>Rez-de-chaussée: plafonds de 9 pieds ou plus, planchers de bois ou céramique.</p>
-		<p class='list'>Sous-sol: deux des chambres ont de grandes fenêtres lumineuses, plafonds de près de 8 pieds, planchers de bois, de céramique ou flottants.</p>
-		
+		<div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=276%20rue%20Lockwell,%20Qu%C3%A9bec+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
 
-		<img src="plans-280.jpg" alt="plan de l'appartement">
-		
-	</main>
+  </main>
 
 	<footer><p>Image d'arrière plan:<br>Martin St-Amant - Wikipedia - CC-BY-SA-3.0</p></footer>
 
+	<script>
+	var slideIndex = 0;
+	var images = document.getElementsByClassName("thumbnail");
+	var captionText = document.getElementById("caption");
+	var bigPicture = document.getElementById("bigPicture");
+
+	showSlides(slideIndex);
+
+	// Next/previous controls
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+
+	// Thumbnail image controls
+	function currentSlide(o) {
+		showSlides(slideIndex = Array.prototype.indexOf.call(o.parentNode.children, o) );
+	}
+
+	function showSlides(n) {
+		if (n >= images.length) {slideIndex = 0}
+		if (n < 0) {slideIndex = images.length}
+
+		for (var i = 0; i < images.length; i++) {
+			images[i].className = images[i].className.replace(" active", "");
+		}
+		images[slideIndex].className += " active";
+
+		bigPicture.src = images[slideIndex].src;
+		captionText.innerHTML = images[slideIndex].alt;
+	}
+
+	function openPicture() {
+		window.open(bigPicture.src, '_blank');
+	}
+	</script>
 
 </html>
